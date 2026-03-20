@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@apps/contracts": ["apps/contracts/src/index.ts"]
+    }
+  }
+}

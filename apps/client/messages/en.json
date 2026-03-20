@@ -1,0 +1,41 @@
+{
+  "Metadata": {
+    "title": "Blog Template",
+    "description": "A blog template for development into a masterpiece :)",
+    "siteName": "Blog Template"
+  },
+  "Header": {
+    "homepage": "Homepage",
+    "clientPage": "Client Page",
+    "blog": "Blog",
+    "login": "Login",
+    "admin": "Admin/Create post",
+    "editPost": "Edit post",
+    "logout": "Logout"
+  },
+  "HomePage": {
+    "role": "Web developer",
+    "description": "Focused on frontend, design, clear UI, smooth UX, and accessibility",
+    "experience": "8 years in the commercial industry, life in pursuit of perfection",
+    "techstack": "Tech stack",
+    "technologies": "React, TypeScript, Next.js, Node.js and more"
+  },
+  "ClientPage": {
+    "title": "Client Page"
+  },
+  "Blog": {
+    "title": "Blog"
+  },
+  "CreatePostPage": {
+    "createText": "Create post",
+    "createPendingText": "Creating..."
+  },
+  "EditPostPage": {
+    "saveText": "Save post",
+    "savePendingText": "Saving...",
+    "saveConfirmText": "Save this post?",
+    "deleteText": "Delete post",
+    "deletePendingText": "Deleting...",
+    "deleteConfirmText": "Delete this post?"
+  }
+}

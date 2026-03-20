@@ -1,0 +1,41 @@
+{
+  "Metadata": {
+    "title": "Блог Шаблон",
+    "description": "Шаблон блога для развития в шедевр :)",
+    "siteName": "Блог Шаблон"
+  },
+  "Header": {
+    "homepage": "Главная страница",
+    "clientPage": "Клиентская страница",
+    "blog": "Блог",
+    "login": "Логин",
+    "admin": "Админ/Создать пост",
+    "editPost": "Редактировать пост",
+    "logout": "Выйти"
+  },
+  "HomePage": {
+    "role": "Веб-разработчик",
+    "description": "Фронтенд, дизайн, ясный UI, комфортный UX и доступность",
+    "experience": "8 лет в коммерческой индустрии, жизнь - в стремлении к совершенству",
+    "techstack": "Технологический стек",
+    "technologies": "React, TypeScript, Next.js, Node.js и многое другое"
+  },
+  "ClientPage": {
+    "title": "Клиентская Страница"
+  },
+  "Blog": {
+    "title": "Блог"
+  },
+  "CreatePostPage": {
+    "createText": "Создать пост",
+    "createPendingText": "Создание..."
+  },
+  "EditPostPage": {
+    "saveText": "Сохранить пост",
+    "savePendingText": "Сохранение...",
+    "saveConfirmText": "Сохранить этот пост?",
+    "deleteText": "Удалить пост",
+    "deletePendingText": "Удаление...",
+    "deleteConfirmText": "Удалить этот пост?"
+  }
+}

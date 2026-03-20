@@ -1,0 +1,9 @@
+{
+  "name": "blog_template",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "backup": "pnpm --filter server backup",
+    "restore": "pnpm --filter server restore"
+  }
+}

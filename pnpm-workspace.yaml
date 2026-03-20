@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - better-sqlite3
+  - sharp
+  - unrs-resolver
+onlyBuiltDependencies:
+  - better-sqlite3
+  - sharp
