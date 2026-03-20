@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Source_Code_Pro } from "next/font/google";
 import { getCurrentUser } from "@/shared/auth/getCurrentUser";
 import { AuthProvider } from "@/shared/auth/auth-context";
 
@@ -13,14 +13,14 @@ import "the-new-css-reset/css/reset.css";
 import "./globals.css";
 import "./layout.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const sans = Montserrat({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const mono = Source_Code_Pro({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-mono",
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -74,13 +74,13 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={geistSans.className}>
+    <html lang={locale} className={`${sans.variable} ${mono.variable}`}>
       <AuthProvider user={user}>
         <NextIntlClientProvider
           locale={locale}
           messages={messages}
         >
-          <body className={`${geistSans.variable} ${geistMono.variable} body`}>
+          <body className="body">
             <Header />
             GU!
             {children}

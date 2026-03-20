@@ -1,3 +1,13 @@
 :root {
   --background: #E5E5E5;
+  --black: #373737;
+  --crimson: #C24A4A;
+}
+
+body {
+  font-family: var(--font-sans, system-ui), sans-serif;
+}
+
+code, pre {
+  font-family: var(--font-mono, monospace);
 }
