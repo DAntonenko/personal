@@ -1,31 +1,34 @@
-import { getCurrentUser } from "@/shared/auth/getCurrentUser";
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import { LanguageSwitcher } from "@/components/UI/LanguageSwitcher/LanguageSwitcher";
 
-export async function Header() {
+import styles from "./Header.module.scss";
 
-  const user = await getCurrentUser();
+export function Header() {
 
-  const t = await getTranslations("Header");
+  const t = useTranslations("Header");
+  const pathname = usePathname();
 
   return (
-    <header>
-      <LanguageSwitcher />
-      <nav>
-        <ul>
-          <li><a href="/">{t("homepage")}</a></li>
-          <li><a href="/client_page">{t("clientPage")}</a></li>
-          <li><a href="/blog">{t("blog")}</a></li>
-          {!user && <li><a href="/login">{t("login")}</a></li>}
-          {user && <li><a href="/admin">{t("admin")}</a></li>}
-          {user && <li><a href="/admin/posts">{t("editPost")}</a></li>}
-        </ul>
+    <header className={styles.header}>
+      <nav className={styles.header_nav}>
+        <a
+          href="/"
+          className={pathname === "/" ? styles.header_nav_link__active : styles.header_nav_link__inactive}
+        >
+          {t("homepage")}
+        </a>
+        <hr className={styles.header_nav_divider} />
+        <a
+          href="/blog"
+          className={pathname === "/blog" ? styles.header_nav_link__active : styles.header_nav_link__inactive}
+        >
+          {t("blog")}
+        </a>
       </nav>
-      {user &&
-        <form method="POST" action="/api/auth/logout">
-        <button type="submit">{t("logout")}</button>
-        </form>
-      }
+      <LanguageSwitcher />
     </header>
   );
 }

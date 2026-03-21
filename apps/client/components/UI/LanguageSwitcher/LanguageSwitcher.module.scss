@@ -1,0 +1,20 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as m;
+
+.language_switcher {
+  display: flex;
+  font-size: 16px;
+  font-weight: 900;
+
+  @media (min-width: $screen-lg) {
+    font-size: 20px;
+  }
+}
+
+.language__active {
+  color: var(--crimson);
+}
+
+.language__inactive {
+  @include m.interactable;
+}

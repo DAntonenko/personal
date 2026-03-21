@@ -1,0 +1,54 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as m;
+
+.header {
+  padding: 30px var(--min-horizontal-padding-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--crimson);
+
+  @media (min-width: $screen-md) {
+    padding: 36px var(--min-horizontal-padding-md);
+    border-bottom: none;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 56px var(--min-horizontal-padding-lg);
+  }
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+    @media (min-width: $screen-lg) {
+      gap: 24px;
+      font-size: 20px;
+    }
+}
+
+.header_nav_divider {
+  width: 2px;
+  height: 12px;
+  background-color: var(--black);
+
+    @media (min-width: $screen-lg) {
+      width: 3px;
+      height: 18px;
+    }
+}
+
+.header_nav_link__active {
+  color: var(--crimson);
+  cursor: initial;
+}
+
+.header_nav_link__inactive {
+  @include m.interactable;
+}

@@ -1,0 +1,14 @@
+@mixin interactable {
+  cursor: pointer;
+
+  background-image: linear-gradient(var(--black));
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: left bottom;
+
+  transition: background-size 0.3s ease-in-out;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+}

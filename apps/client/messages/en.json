@@ -5,13 +5,8 @@
     "siteName": "Blog Template"
   },
   "Header": {
-    "homepage": "Homepage",
-    "clientPage": "Client Page",
-    "blog": "Blog",
-    "login": "Login",
-    "admin": "Admin/Create post",
-    "editPost": "Edit post",
-    "logout": "Logout"
+    "homepage": "About",
+    "blog": "Blog"
   },
   "HomePage": {
     "role": "Web developer",

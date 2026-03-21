@@ -10,8 +10,8 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Header } from "@/components/layout/Header/Header";
 
 import "the-new-css-reset/css/reset.css";
-import "./globals.css";
-import "./layout.css";
+import "../styles/globals.scss";
+import "./layout.scss";
 
 const sans = Montserrat({
   subsets: ["latin", "cyrillic"],
@@ -82,7 +82,6 @@ export default async function RootLayout({
         >
           <body className="body">
             <Header />
-            GU!
             {children}
           </body>
         </NextIntlClientProvider>
