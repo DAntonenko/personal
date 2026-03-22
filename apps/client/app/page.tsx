@@ -14,12 +14,6 @@ export default async function HomePage() {
 
   return (
     <main className={styles.main}>
-      <section className={styles.main_content}>
-        <h1 className={styles.main_title}>{t("role").toUpperCase()}</h1>
-        <p>{t("description")}</p>
-        <p>{t("experience")}</p>
-        <p>{t("techstack")}: {t("technologies")}</p>
-      </section>
       <Image
         className={styles.main_image}
         src="/images/content/portrait_lg.jpg"
@@ -28,6 +22,12 @@ export default async function HomePage() {
         height={500}
         priority
       />
+      <section className={styles.main_content}>
+        <h1 className={styles.main_title}>{t("role").toUpperCase()}</h1>
+        <p>{t("description")}</p>
+        <p>{t("experience")}</p>
+        <p>{t("techstack")}: {t("technologies")}</p>
+      </section>
     </main>
   );
 }

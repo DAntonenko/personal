@@ -8,7 +8,13 @@
 
   transition: background-size 0.3s ease-in-out;
 
-  &:hover {
-    background-size: 100% 2px;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-size: 100% 2px;
+    }
   }
 }
+
+  // &:hover {
+  //   background-size: 100% 2px;
+  // }
