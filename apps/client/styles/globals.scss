@@ -8,10 +8,6 @@
   --min-horizontal-padding-lg: 120px;
 }
 
-body {
-  font-family: var(--font-sans, system-ui), sans-serif;
-}
-
-code, pre {
-  font-family: var(--font-mono, monospace);
+.highlighted {
+  color: var(--crimson);
 }

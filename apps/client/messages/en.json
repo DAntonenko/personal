@@ -9,11 +9,15 @@
     "blog": "Blog"
   },
   "HomePage": {
+    "name": "Dmitri Antonenko",
     "role": "Web developer",
-    "description": "Focused on frontend, design, clear UI, smooth UX, and accessibility",
-    "experience": "8 years in the commercial industry, life in pursuit of perfection",
+    "focused": "Focused on ",
+    "frontend": "frontend",
+    "design": ", design, clear UI, smooth UX, and accessibility",
+    "8_years": "8 years",
+    "in_the_commercial": " in the commercial industry, life in pursuit of\u00A0perfection",
     "techstack": "Tech stack",
-    "technologies": "React, TypeScript, Next.js, Node.js and more"
+    "and_more": " and more"
   },
   "ClientPage": {
     "title": "Client Page"

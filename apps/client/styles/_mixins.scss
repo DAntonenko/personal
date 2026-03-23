@@ -1,3 +1,15 @@
+@use "@/styles/variables" as *;
+
+@mixin main_text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+
+  @media (min-width: $screen-lg) {
+    font-size: 24px;
+  }
+}
+
 @mixin interactable {
   cursor: pointer;
 
@@ -14,7 +26,3 @@
     }
   }
 }
-
-  // &:hover {
-  //   background-size: 100% 2px;
-  // }

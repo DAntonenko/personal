@@ -1,36 +1,104 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as m;
+
 .main {
   display: flex;
   flex-grow: 1;
   gap: 8vw;
-  padding: 8vw;
+  padding: 36px var(--min-horizontal-padding-sm);
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
-.main_content {
-  /* width: 20vw;
-  display: flex;
-  flex-direction: column;
-  gap: 24px; */
-}
-
-.main_title {
-  font-size: 60px;
-  font-weight: 900;
-}
-
-.main_image {
+.image {
   display: none;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+.content {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  grid-template-rows: 48px repeat(3, fit-content(40%)) 128px;
+  gap: 20px 8px;
+}
+
+.name {
+  grid-column: 1;
+  grid-row: 5;
+  align-self: self-end;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--crimson);
+  letter-spacing: 15%;
+  text-wrap: nowrap;
+  text-align: left;
+  transform: rotate(-90deg) translate(15%, -20%);
+
+  &__ru {
+    letter-spacing: 3%;
+  }
+}
+
+.role {
+  position: relative;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.role_title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+
+  &__ru {
+    letter-spacing: -8%;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  &__shadow {
+    color: var(--crimson);
+    opacity: 0.3;
+    position: absolute;
+    top: 15%;
+    left: 1%;
   }
+}
+
+.description,
+.experience,
+.techstack {
+  max-width: 264px;
+}
+
+.description {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.experience {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.techstack {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.links {
+  grid-column: 2;
+  grid-row: 5;
+  align-self: self-end;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include m.interactable;
 }
