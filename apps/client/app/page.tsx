@@ -11,14 +11,15 @@ export default async function HomePage() {
 
   return (
     <main className={styles.main}>
-      <Image
-        className={styles.image}
-        src="/images/content/portrait_lg.jpg"
-        alt="Dmitri Antonenko"
-        width={516}
-        height={500}
-        priority
-      />
+      <div className={styles.image_container}>
+        <Image
+          src="/images/content/portrait_lg.jpg"
+          alt="Dmitri Antonenko"
+          width={564}
+          height={540}
+          priority
+        />
+      </div>
       <section className={styles.content}>
         <h1 className={`${styles.name} ${locale === "ru" ? styles.name__ru : undefined}`}>
           {t("name")}
@@ -47,11 +48,10 @@ export default async function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
+              className={styles.icon}
               src="/icons/linkedin.svg"
               alt="LinkedIn"
-              width={20}
-              height={20}
             />
             linkedin.com/in/d-antonenko
           </a>
@@ -61,11 +61,10 @@ export default async function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
+              className={styles.icon}
               src="/icons/email.svg"
               alt="Email"
-              width={20}
-              height={20}
             />
             dmitriy.antonenko.dev@gmail.com
           </a>
