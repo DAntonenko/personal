@@ -4,6 +4,8 @@ import styles from "./page.module.scss";
 import { getLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
+import Behance from "@/public/icons/behance.svg";
+
 export default async function HomePage() {
 
   const locale = await getLocale();
@@ -55,6 +57,21 @@ export default async function HomePage() {
             />
             linkedin.com/in/d-antonenko
           </a>
+
+          <a
+            className={styles.link}
+            href="https://www.behance.net/dmitriantonenko"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className={styles.icon}
+              src="/icons/behance.svg"
+              alt="Behance"
+            />
+            behance.net/dmitriantonenko
+          </a>
+
           <a
             className={styles.link}
             href="mailto:dmitriy.antonenko.dev@gmail.com"

@@ -138,21 +138,25 @@
   flex-direction: column;
   gap: 16px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
 
   @media (min-width: $screen-lg) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .link {
   display: flex;
-  align-items: center;
+  // align-items: top;
   gap: 12px;
   width: fit-content;
   line-height: 150%;
 
   @include m.interactable;
+
+  @media (min-width: $screen-lg) {
+    gap: 20px;
+  }
 }
 
 .icon {
