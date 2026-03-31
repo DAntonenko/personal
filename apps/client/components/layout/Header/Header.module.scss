@@ -2,20 +2,26 @@
 @use "@/styles/mixins" as m;
 
 .header {
-  padding: 30px var(--min-horizontal-padding-sm);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background);
   border-bottom: 1px solid var(--crimson);
 
+  @include m.main_container;
+
   @media (min-width: $screen-md) {
-    padding: 36px var(--min-horizontal-padding-md);
+    padding-top: 36px;
+    padding-bottom: 36px;
     border-bottom: none;
   }
 
   @media (min-width: $screen-lg) {
-    padding: 56px var(--min-horizontal-padding-lg);
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }
 
