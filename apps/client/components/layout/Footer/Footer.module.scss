@@ -1,0 +1,25 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as m;
+
+.footer {
+  border-top: 1px solid var(--crimson);
+
+  @media (min-width: $screen-lg) {
+    border-top: none;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+
+  @include m.main_container;
+
+  @media (min-width: $screen-lg) {
+    font-size: 16px;
+  }
+}

@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 
 import { Header } from "@/components/layout/Header/Header";
+import { Footer } from "@/components/layout/Footer/Footer";
 
 import "the-new-css-reset/css/reset.css";
 import "../styles/globals.scss";
@@ -83,6 +84,7 @@ export default async function RootLayout({
           <body className="body">
             <Header />
             {children}
+            <Footer />
           </body>
         </NextIntlClientProvider>
       </AuthProvider>

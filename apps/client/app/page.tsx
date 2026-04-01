@@ -22,16 +22,16 @@ export default async function HomePage() {
           priority
         />
       </div>
-      <section className={styles.content}>
-        <h1 className={`${styles.name} ${locale === "ru" ? styles.name__ru : undefined}`}>
+      <section className={`${styles.content} ${locale === "ru" ? styles.content__ru : null}`}>
+        <h1 className={`${styles.name} ${locale === "ru" ? styles.name__ru : null}`}>
           {t("name")}
         </h1>
         <div className={styles.role}>
-          <h2 className={`${styles.role_title} ${locale === "ru" ? styles.role_title__ru : undefined}`}>
+          <h2 className={`${styles.role_title} ${locale === "ru" ? styles.role_title__ru : null}`}>
             {t("role")}
           </h2>
           <p
-            className={`${styles.role_title} ${ styles.role_title__shadow} ${locale === "ru" ? styles.role_title__ru : undefined}`}
+            className={`${styles.role_title} ${ styles.role_title__shadow} ${locale === "ru" ? styles.role_title__ru : null}`}
           >
             {t("role")}
           </p>

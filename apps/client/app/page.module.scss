@@ -41,6 +41,10 @@
   @media (min-width: $screen-lg) {
     grid-template-rows: 80px repeat(3, fit-content(40%)) 150px;
     row-gap: 32px;
+
+    &__ru {
+      row-gap: 25px;
+    }
   }
 }
 
@@ -64,6 +68,10 @@
     font-size: 48px;
     letter-spacing: 13%;
     transform: rotate(-90deg) translate(-10%, -64%);
+
+    &__ru {
+      letter-spacing: 1%;
+    }
   }
 }
 
@@ -89,7 +97,8 @@
     }
 
   &__ru {
-    letter-spacing: -8%;
+    letter-spacing: -10%;
+    font-weight: 800;
   }
 
   &__shadow {
