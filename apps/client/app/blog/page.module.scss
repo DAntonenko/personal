@@ -1,0 +1,52 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as m;
+
+.blog_page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 120px;
+
+  @include m.main_container;
+}
+
+.main_title {
+  display: none;
+}
+
+.no_posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @media (min-width: $screen-1024) {
+    gap: 40px;
+  }
+}
+
+.lightbulb_icon {
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: $screen-1024) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.no_posts_message {
+  text-align: center;
+  line-height: 160%;
+  white-space: pre-line;
+}
+
+.come_back {
+  color: var(--crimson);
+  font-size: 28px;
+  font-weight: 600;
+
+  @media (min-width: $screen-1024) {
+    font-size: 36px;
+  }
+}

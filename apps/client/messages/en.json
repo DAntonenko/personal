@@ -23,7 +23,9 @@
     "title": "Client Page"
   },
   "Blog": {
-    "title": "Blog"
+    "title": "Blog",
+    "no_posts": "For some reason there are no\u00A0posts available here right\u00A0now.\nBut they'll be\u00A0coming soon.",
+    "come_back": "Come back!"
   },
   "CreatePostPage": {
     "createText": "Create post",

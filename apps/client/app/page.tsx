@@ -4,8 +4,6 @@ import styles from "./page.module.scss";
 import { getLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
-import Behance from "@/public/icons/behance.svg";
-
 export default async function HomePage() {
 
   const locale = await getLocale();

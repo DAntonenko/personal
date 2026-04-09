@@ -3,15 +3,16 @@
 @mixin main_container {
   padding-left: var(--min-horizontal-padding-sm);
   padding-right: var(--min-horizontal-padding-sm);
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   overflow-x: hidden;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-768) {
     padding-left: var(--min-horizontal-padding-md);
     padding-right: var(--min-horizontal-padding-md);
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     max-width: 1420px;
     padding-left: var(--min-horizontal-padding-lg);
     padding-right: var(--min-horizontal-padding-lg);
@@ -23,7 +24,7 @@
   font-weight: 500;
   color: var(--black);
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     font-size: 24px;
   }
 }

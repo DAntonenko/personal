@@ -14,7 +14,7 @@
 .image_container {
   display: none;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1440) {
     position: relative;
     display: block;
 
@@ -38,7 +38,7 @@
   grid-template-rows: 48px repeat(3, fit-content(40%)) 128px;
   gap: 20px 8px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     grid-template-rows: 80px repeat(3, fit-content(40%)) 150px;
     row-gap: 32px;
 
@@ -64,7 +64,7 @@
     letter-spacing: 3%;
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     font-size: 48px;
     letter-spacing: 13%;
     transform: rotate(-90deg) translate(-10%, -64%);
@@ -80,7 +80,7 @@
   grid-column: 1 / 3;
   grid-row: 1;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     grid-column: 2 / 3;
   }
 }
@@ -91,7 +91,7 @@
   text-transform: uppercase;
   text-wrap: nowrap;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-1024) {
       font-size: 48px;
       line-height: 48px;
     }
@@ -108,7 +108,7 @@
     top: 15%;
     left: 1%;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-1024) {
       display: none;
     }
   }
@@ -119,7 +119,7 @@
 .techstack {
   max-width: 264px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     max-width: 456px;
   }
 }
@@ -149,7 +149,7 @@
   font-size: 12px;
   font-weight: 600;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     font-size: 18px;
   }
 }
@@ -163,7 +163,7 @@
 
   @include m.interactable;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     gap: 20px;
   }
 }
@@ -172,7 +172,7 @@
   width: 20px;
   height: 20px;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     width: 24px;
     height:24px;
   }

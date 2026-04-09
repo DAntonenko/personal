@@ -4,7 +4,7 @@
 .footer {
   border-top: 1px solid var(--crimson);
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     border-top: none;
   }
 }
@@ -19,7 +19,7 @@
 
   @include m.main_container;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-1024) {
     font-size: 16px;
   }
 }
