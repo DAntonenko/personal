@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/client/next.config.ts",
+      "use": "@vercel/next"
+    }
+  ]
+}
