@@ -4,10 +4,10 @@ const BACKEND_URL = "http://localhost:4000";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   const res = await fetch(
-    `${BACKEND_URL}/api/posts/${params.id}`,
+    `${BACKEND_URL}/api/posts/${(await params).id}`,
     {
       headers: {
         cookie: req.headers.get("cookie") ?? "",
@@ -29,12 +29,12 @@ export async function GET(
 
 export async function PUT(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   const body = await req.text();
 
   const res = await fetch(
-    `${BACKEND_URL}/api/posts/${params.id}`,
+    `${BACKEND_URL}/api/posts/${(await params).id}`,
     {
       method: "PUT",
       headers: {
