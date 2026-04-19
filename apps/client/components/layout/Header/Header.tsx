@@ -23,7 +23,8 @@ export function Header() {
         <hr className={styles.header_nav_divider} />
         <a
           href="/blog"
-          className={pathname === "/blog" ? styles.header_nav_link__active : styles.header_nav_link__inactive}
+          // className={pathname === "/blog" ? styles.header_nav_link__active : styles.header_nav_link__inactive}
+          className={styles.header_nav_link__disabled}
         >
           {t("blog")}
         </a>

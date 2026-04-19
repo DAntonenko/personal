@@ -51,11 +51,18 @@
     }
 }
 
-.header_nav_link__active {
-  color: var(--crimson);
-  cursor: initial;
-}
+.header_nav_link {
+  &__active {
+    color: var(--crimson);
+    cursor: initial;
+  }
 
-.header_nav_link__inactive {
-  @include m.interactable;
+  &__inactive {
+    @include m.interactable;
+  }
+
+  &__disabled {
+    opacity: .3;
+    pointer-events: none;
+  }
 }
