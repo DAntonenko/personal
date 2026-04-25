@@ -13,7 +13,8 @@
     "next-intl": "^4.8.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "the-new-css-reset": "^1.11.3"
+    "the-new-css-reset": "^1.11.3",
+    "@apps/contracts": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20",
